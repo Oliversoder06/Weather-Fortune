@@ -1,0 +1,17 @@
+# Environment files
+.env
+
+# Next.js
+apps/web/node_modules/
+apps/web/.next/
+apps/web/next-env.d.ts
+
+# Python cache
+apps/api/app/__pycache__/
+apps/api/alembic/__pycache__/
+
+# Logs
+*.log
+
+# Temporary test file
+test_migration.py
