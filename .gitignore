@@ -1,5 +1,8 @@
 # Environment files
 .env
+.env.local
+.env.development
+.env.production
 
 # Next.js
 apps/web/node_modules/
@@ -9,9 +12,21 @@ apps/web/next-env.d.ts
 # Python cache
 apps/api/app/__pycache__/
 apps/api/alembic/__pycache__/
+apps/api/tests/__pycache__/
+__pycache__/
+*.pyc
+
+# Testing
+.pytest_cache/
 
 # Logs
 *.log
 
-# Temporary test file
+# Temporary test files in root directory (remove before commit)
+/test_*.py
+/simple_*.py
+/*_temp.py
+/debug_*.py
+
+# Temporary migration file
 test_migration.py
